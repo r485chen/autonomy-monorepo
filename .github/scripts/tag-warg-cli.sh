@@ -4,7 +4,7 @@
 set -euo pipefail
 
 PYPROJECT="warg_cli/pyproject.toml"
-PUBLISH_WORKFLOW="does-not-exist.yml"
+PUBLISH_WORKFLOW="publish-warg-cli.yml"
 
 # 1. Read the version from pyproject.toml
 version="$(python - "${PYPROJECT}" <<'PY'
